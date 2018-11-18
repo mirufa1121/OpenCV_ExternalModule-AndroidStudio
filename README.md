@@ -117,9 +117,13 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48668451-e1a0dd00-eabb-11e8-8eb7-30f051a30750.png)
      
-- 6) Luego apretamos el botón "Configure", inmediatamente aparecera otra pantalla donde debemos especificar el "Generador" el cual debemos elegir "MinGW Makefiles", y despues seleccionamos "Specify toolchain file for cross-compiling", similar a como se ve en la imagen siguiente:
+- 6) Luego apretamos el botón "Configure", inmediatamente aparecera otra pantalla donde debemos especificar el "Generador" el cual debemos elegir "MinGW Makefiles", y despues seleccionamos "Specify toolchain file for cross-compiling" y apretamos "Next".
 
-![image](https://user-images.githubusercontent.com/31372472/48668494-bd91cb80-eabc-11e8-89f3-8a93ea084d6c.png)
+     ![image](https://user-images.githubusercontent.com/31372472/48668494-bd91cb80-eabc-11e8-89f3-8a93ea084d6c.png)
+     
+     Inmediatamente se generará un error, el cual se solucionará en los siguientes pasos
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48668530-a1425e80-eabd-11e8-8194-4513d11de5f3.png)
 
 
      
