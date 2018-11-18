@@ -192,7 +192,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
       CMake Error at C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources/platforms/android/android.toolchain.cmake:820 (message):
          Specified Android native API level 'android-9' is not supported by your NDK/toolchain.
-
+         
          Supported values of ANDROID_NATIVE_API_LEVEL:
          14;15;16;17;18;19;21;22;23;24;26;27
          
