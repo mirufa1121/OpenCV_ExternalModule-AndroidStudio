@@ -172,3 +172,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      - c) A continuación debemos de configurar el nombre de carpeta donde se encuentra la copia de los sistemas raíz de la plataforma que queremos compilar, en este caso el nombre es "arm-linux-androideabi-4.9" y se encuentra dentro de la ruta "C:\android-ndk-r16b\toolchains"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_TOOLCHAIN_NAME", el tipo "String" y el valor "arm-linux-androideabi-4.9", como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48676733-eeafe180-eb38-11e8-8a16-2abad4732d58.png)
+     
+     - c) Tambien debemos configurar la ruta del JDK que se encuentra dentro de la ruta "C:\Program Files\Java\jdk1.8.0_181"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "JAVA_HOME", el tipo "Path" y el valor "C:\Program Files\Java\jdk1.8.0_181", como se ve en la imagen.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48677108-0178e500-eb3e-11e8-8b26-b34e0f561473.png)
