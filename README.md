@@ -20,15 +20,15 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
   
 ## Pasos:
 
-- 1) La instalación y copia de archivos del OpenCV (Para Windows) y OpenCV_Contrib, debe de ser similar a lo siguiente, en mi caso yo coloque ambos en la siguiente ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk", similar a la siguiente imagen:
+- 1) La instalación y copia de archivos del OpenCV (Para Windows) y OpenCV_Contrib, debe de ser similar a lo siguiente, en mi caso yo coloqué ambos en la siguiente ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk", similar a la siguiente imagen:
 
      ![image](https://user-images.githubusercontent.com/31372472/48667518-b8755200-eaa5-11e8-9e5f-e716128b9152.png)
 
-     Los archivos instalados en OpenCV para windows quedan asi en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk".
+     Los archivos instalados de OpenCV para windows quedan asi en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk".
      
      ![image](https://user-images.githubusercontent.com/31372472/48667544-5d902a80-eaa6-11e8-9733-e0204b1de47a.png)
      
-     El OpenCV_Contrib queda así en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv_contrib-342-win".
+     El OpenCV_Contrib queda así en la siguiente ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv_contrib-342-win".
      
      ![image](https://user-images.githubusercontent.com/31372472/48667548-8adcd880-eaa6-11e8-9e80-d6ea8e6e5813.png)
 
@@ -108,4 +108,4 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48667459-1b65e980-eaa4-11e8-8147-64d1f83c296e.png)
      
-- 5) Configurar MinGW, 
+- 5) A partir de aquí empezamos a construir los archivos de OpenCV de Windows y OpenCV_Contrib para que luego sean utilizados por el OpenCV para Andorid, para ello, despues de instalado debemos de abrir el CMAKE, luego de levantado vamos a colocar las rutas de la fuente y de la construcción, 
