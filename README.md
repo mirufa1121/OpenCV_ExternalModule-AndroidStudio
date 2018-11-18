@@ -205,10 +205,9 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
       Call Stack (most recent call first):
          CMakeLists.txt:127 (project)
 
-      CMake Error at platforms/android/android.toolchain.cmake:458 (message):
-         Could not find neither Android NDK nor Android standalone toolchain.
+      CMake Error at C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources/platforms/android/android.toolchain.cmake:820 (message):
 
-         You should either set an environment variable:
+         Specified Android native API level 'android-9' is not supported by your NDK/toolchain.
               export ANDROID_NDK=~/my-android-ndk
          or
               export ANDROID_STANDALONE_TOOLCHAIN=~/my-android-toolchain
