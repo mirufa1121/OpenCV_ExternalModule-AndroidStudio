@@ -121,9 +121,17 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48668494-bd91cb80-eabc-11e8-89f3-8a93ea084d6c.png)
      
-     Inmediatamente se generará un error, el cual se solucionará en los siguientes pasos
+     Seleccionamosel archivo, en mi caso se encuentra dentro del mismo OpenCV para windows en mi caso en la siguiente ruta:
+     
+     C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources/platforms/android/android.toolchain.cmake
+     
+     Se debe de ver como la siguiente imagen, luego apretamos "Finish".
      
      ![image](https://user-images.githubusercontent.com/31372472/48668530-a1425e80-eabd-11e8-8194-4513d11de5f3.png)
+     
+     Inmeditamete se generará un error que luego en los siguientes pasos se solucionará, solo darle "OK".
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48668552-1dd53d00-eabe-11e8-849f-9a640325cfb2.png)
 
-
+     
      
