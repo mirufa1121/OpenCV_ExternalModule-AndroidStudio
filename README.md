@@ -179,3 +179,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      - e) Tambien debemos configurar la ruta del ANT que se encuentra, en mi caso, dentro de la ruta "C:/apache-ant-1.10.5/bin/ant.bat"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANT_EXECUTABLE", el tipo "Filepath" y el valor mencionado inicialmente, como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48677717-f5455580-eb46-11e8-8643-18011f728623.png)
+     
+     - f) Ahora damos click en "Configure".
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48677770-c8457280-eb47-11e8-942d-2ca0abdaa5e5.png)
