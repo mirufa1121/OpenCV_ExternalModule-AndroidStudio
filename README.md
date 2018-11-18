@@ -145,18 +145,19 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
          or put the toolchain or NDK in the default path:
               sudo ln -s ~/my-android-ndk C:/Program Files/android-ndk
               sudo ln -s ~/my-android-toolchain /opt/android-toolchain
+
       Call Stack (most recent call first):
          C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeDetermineSystem.cmake:94 (include)
       CMakeLists.txt:127 (project)
-
-
+      
       CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
       CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
       
       Configuring incomplete, errors occurred!
 
-- 7) Luego vamos a la sección de configuraciones y empezamos cambiar las opciones predefinidas, cambiamos la varianle:
-     - a) CMAKE_MAKE_PROGRAM por el siguiente programa de construcción que se encuentra en nuestro NDK, en mi caso se encuentra en la siguiente ruta:
+- 7) En estos siguientes pasos vamos a estar modificando la sección de configuraciones y cambiamos variable:
+
+     - a) Comenzamos cambiando la variable CMAKE_MAKE_PROGRAM por el siguiente programa de construcción que se encuentra en nuestro NDK, en mi caso se encuentra en la siguiente ruta:
      
      C:\android-ndk-r16b\prebuilt\windows-x86_64\bin\make.exe
      
@@ -164,3 +165,10 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48672340-a4ac0900-eb02-11e8-83f9-76f24f57ed26.png)
 
+     - b) Ahora, como se indica en el error, agregamos el NDK, que en mi caso se encuentra en la ruta "C:/android-ndk-r16b", para ello vamos al botón "Add Entry", colocamos como nombre de la variable "ANDROID_NDK", el tipo "Path" y el valor la ruta del ndk, como se ve en la imagen.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48676583-ab547380-eb36-11e8-9277-07325e65cc52.png)
+
+     - c) A continuación debemos de configurar el nombre de carpeta donde se encuentra la copia de los sistemas raíz de la plataforma que queremos compilar, en este caso el nombre es "arm-linux-androideabi-4.9" y se encuentra dentro de la ruta "C:\android-ndk-r16b\toolchains"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_TOOLCHAIN_NAME", el tipo "String" y el valor "arm-linux-androideabi-4.9", como se ve en la imagen.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48676733-eeafe180-eb38-11e8-8a16-2abad4732d58.png)
