@@ -20,17 +20,90 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
   
 ## Pasos:
 
-- 1) Configurar Variables de Entorno, después de instalar todo lo que se menciono líneas arriba, se debe de configurar algunas variables de entorno. En mi caso no tenia configurado el ANT_HOME y el JAVA_HOME
+- 1) La instalación y copia de archivos del OpenCV (Para Windows) y OpenCV_Contrib, debe de ser similar a lo siguiente, en mi caso yo coloque ambos en la siguiente ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk", similar a la siguiente imagen:
+
+     ![image](https://user-images.githubusercontent.com/31372472/48667518-b8755200-eaa5-11e8-9e5f-e716128b9152.png)
+
+     Los archivos instalados en OpenCV para windows quedan asi en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk".
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48667544-5d902a80-eaa6-11e8-9733-e0204b1de47a.png)
+     
+     El OpenCV_Contrib queda así en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv_contrib-342-win".
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48667548-8adcd880-eaa6-11e8-9e80-d6ea8e6e5813.png)
+
+- 2) Configurar Variables de Entorno, después de instalar todo lo que se menciono líneas arriba, se debe de configurar algunas variables de entorno. En mi caso no tenia configurado el ANT_HOME y el JAVA_HOME
 
      ![image](https://user-images.githubusercontent.com/31372472/48667204-3aae4800-ea9f-11e8-9ab7-b9019156f0af.png)
      
-     Tambien debes de configurar en el "path", el MINGW, Java Tools, SDK Tools, SDK Platform Tools, Java y Ant.
+     Tambien debes de configurar en el "path", el MINGW, Java Tools, SDK Tools, SDK Platform Tools, Java y Ant, luego dar Aceptar en todo.
+     
      ![image](https://user-images.githubusercontent.com/31372472/48667235-c6c06f80-ea9f-11e8-99b8-9f4052c90aa3.png)
 
-- 2) Configurar el JDK, para ello debes de primero abrir tu Android Studio, luego ingresar a File --> Project Structure, luego dar click  en "SDK Location" y en la sección de "JDK Location", quitar el check y colocar a ruta del JDK, en mi caso la ruta de mi sdk es:
+- 3) Configurar el JDK, para ello debes de primero abrir tu Android Studio, luego ingresar a File --> Project Structure, luego dar click  en "SDK Location" y en la sección de "JDK Location", quitar el check y colocar a ruta del JDK, en mi caso la ruta de mi sdk es:
      
      C:\Program Files\Java\jdk1.8.0_181
      
      La configuración debe de quedar como la siguiente imagen y darle "OK".
      
      ![image](https://user-images.githubusercontent.com/31372472/48667142-d6d74f80-ea9d-11e8-99e8-46874ce50331.png)
+     
+- 4) Abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente:
+
+     * mingw32-base
+     * mingw32-binutils
+     * mingw32-gcc
+     * mingw32-gcc-core-deps
+     * mingw32-gcc-g++
+     * mingw32-gcc-gdb
+     * mingw32-libatomic
+     * mingw32-libgcc
+     * mingw32-libgmp
+     * mingw32-libgomp
+     * mingw32-libgomp-deps
+     * mingw32-libiconv
+     * mingw32-libintl
+     * mingw32-libisl
+     * mingw32-libmingwex
+     * mingw32-libmpc
+     * mingw32-libmpfr
+     * mingw32-libpthreadgc
+     * mingw32-libquadmath
+     * mingw32-libssp
+     * mingw32-libstdc++
+     * mingw32-libz
+     * mingw32-make
+     * mingw32-mingw-get
+     * mingw32-mingwrt
+     * mingw32-w32api
+     * msys-base
+     * msys-bash
+     * msys-bzip2
+     * msys-core
+     * msys-coreutils
+     * msys-diffutils
+     * msys-dos2unix
+     * msys-file
+     * msys-findutils
+     * msys-gawk
+     * msys-grep
+     * msys-gzip
+     * msys-less
+     * msys-libbz2
+     * msys-libiconv
+     * msys-libintl
+     * msys-liblzma
+     * msys-libmagic
+     * msys-libregex
+     * msys-libtermcap
+     * msys-make
+     * msys-sed
+     * msys-tar
+     * msys-termcap
+     * msys-texinfo
+     * msys-xz
+     * msys-zlib
+     
+     Se ve similar a esta imagen.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48667459-1b65e980-eaa4-11e8-8147-64d1f83c296e.png)
