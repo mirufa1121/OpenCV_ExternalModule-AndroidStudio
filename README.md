@@ -199,8 +199,10 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
          Call Stack (most recent call first):
          C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/build/CMakeFiles/3.13.0-rc2/CMakeSystem.cmake:6 (include)
          C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/build/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+         
          CMake Error at C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeTestCXXCompiler.cmake:30 (try_compile):
          Failed to configure test project build system.
+         
          Call Stack (most recent call first):
          CMakeLists.txt:127 (project)
 
