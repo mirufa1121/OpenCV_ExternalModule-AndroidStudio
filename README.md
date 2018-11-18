@@ -205,4 +205,24 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
       Call Stack (most recent call first):
          CMakeLists.txt:127 (project)
 
+      CMake Error at platforms/android/android.toolchain.cmake:458 (message):
+         Could not find neither Android NDK nor Android standalone toolchain.
 
+         You should either set an environment variable:
+              export ANDROID_NDK=~/my-android-ndk
+         or
+              export ANDROID_STANDALONE_TOOLCHAIN=~/my-android-toolchain
+         or put the toolchain or NDK in the default path:
+              sudo ln -s ~/my-android-ndk C:/Program Files/android-ndk
+              sudo ln -s ~/my-android-toolchain /opt/android-toolchain
+
+         Call Stack (most recent call first):
+         C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeDetermineSystem.cmake:94 (include)
+         CMakeLists.txt:127 (project)
+         CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+         CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+      
+         Configuring incomplete, errors occurred!
+
+     Similar al siguiente:
+     
