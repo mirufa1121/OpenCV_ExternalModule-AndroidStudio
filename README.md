@@ -121,17 +121,45 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48668494-bd91cb80-eabc-11e8-89f3-8a93ea084d6c.png)
      
-     Seleccionamosel archivo, en mi caso se encuentra dentro del mismo OpenCV para windows en mi caso en la siguiente ruta:
+     Seleccionamosel archivo que se encuentra dentro del mismo OpenCV para windows, en mi caso en la siguiente ruta:
      
      C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources/platforms/android/android.toolchain.cmake
      
-     Se debe de ver como la siguiente imagen, luego apretamos "Finish".
+     Se debe de ver como la siguiente imagen y luego apretamos "Finish".
      
      ![image](https://user-images.githubusercontent.com/31372472/48668530-a1425e80-eabd-11e8-8194-4513d11de5f3.png)
      
      Inmeditamete se generará un error que luego en los siguientes pasos se solucionará, solo darle "OK".
      
      ![image](https://user-images.githubusercontent.com/31372472/48668552-1dd53d00-eabe-11e8-849f-9a640325cfb2.png)
+     
+     El error que se genera es el siguiente:
+     
+      CMake Error at platforms/android/android.toolchain.cmake:458 (message):
+         Could not find neither Android NDK nor Android standalone toolchain.
 
+         You should either set an environment variable:
+              export ANDROID_NDK=~/my-android-ndk
+         or
+              export ANDROID_STANDALONE_TOOLCHAIN=~/my-android-toolchain
+         or put the toolchain or NDK in the default path:
+              sudo ln -s ~/my-android-ndk C:/Program Files/android-ndk
+              sudo ln -s ~/my-android-toolchain /opt/android-toolchain
+      Call Stack (most recent call first):
+         C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeDetermineSystem.cmake:94 (include)
+      CMakeLists.txt:127 (project)
+
+
+      CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+      CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+      
+      Configuring incomplete, errors occurred!
+
+- 7) Luego vamos a la sección de configuraciones y empezamos cambiar las opciones predefinidas, cambiamos la varianle:
+     - a) CMAKE_MAKE_PROGRAM por el siguiente programa de construcción que se encuentra en nuestro NDK, en mi caso se encuentra en la siguiente ruta:
+     
+     C:\android-ndk-r16b\prebuilt\windows-x86_64\bin\make.exe
+     
+     En imagen se debe de ver así:
      
      
