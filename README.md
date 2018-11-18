@@ -1,6 +1,6 @@
 # Como configurar OpenCV External Modules o Contribution Modules en Android Studio para Windows de 64 bits
 
-Configuración de OpenCV 3.4.2 (64 bits) y OpendCV_Cotrib 3.4.2 en Android Studio 3.1.4 (64 Bits) para Windows 7, 10 o más de 64 bits.
+Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio 3.1.4 (64 Bits) para Windows 7, 10 o más de 64 bits.
 
 ## Requerimientos:
 
@@ -18,3 +18,19 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpendCV_Cotrib 3.4.2 en Android Studi
   https://opencv.org/releases.html
 - Decargar el OpenCV_Contrib (Extra Módulos), en mi caso descargué "opencv_contrib-3.4.2.zip", lo pueden bajar del siguiente link:
   
+## Pasos:
+
+- 1) Configurar Variables de Entorno, después de instalar todo lo que se menciono líneas arriba, se debe de configurar algunas variables de entorno. En mi caso no tenia configurado el ANT_HOME y el JAVA_HOME
+
+     ![image](https://user-images.githubusercontent.com/31372472/48667204-3aae4800-ea9f-11e8-9ab7-b9019156f0af.png)
+     
+     Tambien debes de configurar en el "path", el MINGW, Java Tools, SDK Tools, SDK Platform Tools, Java y Ant.
+     ![image](https://user-images.githubusercontent.com/31372472/48667235-c6c06f80-ea9f-11e8-99b8-9f4052c90aa3.png)
+
+- 2) Configurar el JDK, para ello debes de primero abrir tu Android Studio, luego ingresar a File --> Project Structure, luego dar click  en "SDK Location" y en la sección de "JDK Location", quitar el check y colocar a ruta del JDK, en mi caso la ruta de mi sdk es:
+     
+     C:\Program Files\Java\jdk1.8.0_181
+     
+     La configuración debe de quedar como la siguiente imagen y darle "OK".
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48667142-d6d74f80-ea9d-11e8-99e8-46874ce50331.png)
