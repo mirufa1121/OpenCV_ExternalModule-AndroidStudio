@@ -212,4 +212,8 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
          cmake/android/OpenCVDetectAndroidSDK.cmake:204 (include)
          CMakeLists.txt:645 (include)
 
-     Similar al siguiente:
+     Para solucionar ese error simplemente vamos a las variables del CMAKE, nos dirigimos a la variable BUILD_ANDROID_PROJECTS y le quitamos el check, como se ve en la imagen y despues damos click en "Configurar" y finalmemte compilara todo sin problemas, y en la última línea de los detalle saldrá "Configuring done", ver imagen.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48679122-3c891180-eb5a-11e8-9521-89a5f4b287bb.png)
+     
+     
