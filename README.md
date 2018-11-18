@@ -179,8 +179,18 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      - e) Tambien debemos configurar la ruta del ANT que se encuentra, en mi caso, dentro de la ruta "C:/apache-ant-1.10.5/bin/ant.bat"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANT_EXECUTABLE", el tipo "Filepath" y el valor mencionado inicialmente, como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48677717-f5455580-eb46-11e8-8643-18011f728623.png)
+
+     - f) Por ultimo configuramos el JDK, para ello vamos a tener que configurar 3 variables, primero la ruta del JDK, en mi caso se encuentra en la ruta "C:/Users/win/AppData/Local/Android/Sdk"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_SDK_ROOT", el tipo "Path" y el valor mencionado inicialmente, como se ve en la imagen.
+
+     ![image](https://user-images.githubusercontent.com/31372472/48678794-eade8800-eb55-11e8-8b6e-aedd622482d3.png)
      
-     - f) Ahora damos click en "Configure".
+     Luego debemos configurar la variable ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "andorid-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api adminitos por la NDK. Ver las siguientes imagenes:
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48678894-9805d000-eb57-11e8-883a-7983dea777f0.png)
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48678935-02b70b80-eb58-11e8-8fa4-64fdf1ea4055.png)
+
+     - g) Ahora damos click en "Configure".
      
      ![image](https://user-images.githubusercontent.com/31372472/48677770-c8457280-eb47-11e8-942d-2ca0abdaa5e5.png)
      
