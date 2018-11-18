@@ -48,7 +48,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48667142-d6d74f80-ea9d-11e8-99e8-46874ce50331.png)
      
-- 4) Abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente:
+- 4) Configurar MinGW, abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente:
 
      * mingw32-base
      * mingw32-binutils
@@ -107,3 +107,5 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      Se ve similar a esta imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48667459-1b65e980-eaa4-11e8-8147-64d1f83c296e.png)
+     
+- 5) Configurar MinGW, 
