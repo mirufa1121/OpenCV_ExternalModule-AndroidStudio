@@ -180,11 +180,11 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48677717-f5455580-eb46-11e8-8643-18011f728623.png)
 
-     - f) Por ultimo configuramos el JDK, para ello vamos a tener que configurar 3 variables, primero la ruta del JDK, en mi caso se encuentra en la ruta "C:/Users/win/AppData/Local/Android/Sdk"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_SDK_ROOT", el tipo "Path" y el valor mencionado inicialmente, como se ve en la imagen.
+     - f) Por ultimo configuramos el SDK, para ello vamos a tener que configurar 3 variables, primero la ruta del SDK, en mi caso se encuentra en la ruta "C:/Users/win/AppData/Local/Android/Sdk"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_SDK_ROOT", el tipo "Path" y el valor mencionado inicialmente, como se ve en la imagen.
 
      ![image](https://user-images.githubusercontent.com/31372472/48678794-eade8800-eb55-11e8-8b6e-aedd622482d3.png)
      
-     Luego debemos configurar la variable ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "andorid-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api adminitos por la NDK. Ver las siguientes imagenes:
+     Luego debemos configurar las variables ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "andorid-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api adminitos por la NDK. Ver las siguientes imagenes:
      
      ![image](https://user-images.githubusercontent.com/31372472/48678894-9805d000-eb57-11e8-883a-7983dea777f0.png)
      
@@ -200,20 +200,16 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      Similar al siguiente:
      
-         CMake Error at C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources/platforms/android/android.toolchain.cmake:820 (message):
-         Specified Android native API level 'android-9' is not supported by your NDK/toolchain.
-         
-         Supported values of ANDROID_NATIVE_API_LEVEL:
-         14;15;16;17;18;19;21;22;23;24;26;27
-         
+         CMake Error at cmake/android/android_gradle_projects.cmake:1 (message):
+  
+         Android gradle-based build/projects are not supported in this version of OpenCV.
+
+         You need to downgrade Android SDK Tools to version 25.2.5.
+
+         Details: https://github.com/opencv/opencv/issues/8460
+
          Call Stack (most recent call first):
-         C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/build/CMakeFiles/3.13.0-rc2/CMakeSystem.cmake:6 (include)
-         C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/build/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-         
-         CMake Error at C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeTestCXXCompiler.cmake:30 (try_compile):
-         Failed to configure test project build system.
-         
-         Call Stack (most recent call first):
-         CMakeLists.txt:127 (project)
+         cmake/android/OpenCVDetectAndroidSDK.cmake:204 (include)
+         CMakeLists.txt:645 (include)
 
      Similar al siguiente:
