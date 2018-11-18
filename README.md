@@ -48,7 +48,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48667142-d6d74f80-ea9d-11e8-99e8-46874ce50331.png)
      
-- 4) Configurar MinGW, abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente:
+- 4) Configurar MinGW, abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente (tener en cuenta que el MinGW tiene configuraciones predefinidas y posiblemente algunos ya esten marcados):
 
      * mingw32-base
      * mingw32-binutils
@@ -104,8 +104,22 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      * msys-xz
      * msys-zlib
      
-     Se ve similar a esta imagen.
+     Se ve similar a esta imagen (esta imagen no muestra todos los check que se menciona en la lista de arriba debido a la gran cantidad, pero podrán ver todas las imagenes en este link: XXXXXXXX).
      
      ![image](https://user-images.githubusercontent.com/31372472/48667459-1b65e980-eaa4-11e8-8147-64d1f83c296e.png)
      
-- 5) A partir de aquí empezamos a construir los archivos de OpenCV de Windows y OpenCV_Contrib para que luego sean utilizados por el OpenCV para Andorid, para ello, despues de instalado debemos de abrir el CMAKE, luego de levantado vamos a colocar las rutas de la fuente y de la construcción, 
+- 5) A partir de aquí empezamos a construir los archivos de OpenCV de Windows y OpenCV_Contrib para que luego sean utilizados por el OpenCV para Andorid, para ello abrimos el CMAKE, allí colocamos las rutas de la fuente y de la construcción, en micaso las rutas son:
+
+     Source: C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources
+     Build: C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/build
+     
+     Y se deben de ver como la siguiente imagen:
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48668451-e1a0dd00-eabb-11e8-8eb7-30f051a30750.png)
+     
+- 6) Luego apretamos el botón "Configure", inmediatamente aparecera otra pantalla donde debemos especificar el "Generador" el cual debemos elegir "MinGW Makefiles", y despues seleccionamos "Specify toolchain file for cross-compiling", similar a como se ve en la imagen siguiente:
+
+![image](https://user-images.githubusercontent.com/31372472/48668494-bd91cb80-eabc-11e8-89f3-8a93ea084d6c.png)
+
+
+     
