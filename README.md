@@ -146,14 +146,13 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
               sudo ln -s ~/my-android-ndk C:/Program Files/android-ndk
               sudo ln -s ~/my-android-toolchain /opt/android-toolchain
 
-      Call Stack (most recent call first):
+         Call Stack (most recent call first):
          C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeDetermineSystem.cmake:94 (include)
-      CMakeLists.txt:127 (project)
+         CMakeLists.txt:127 (project)
+         CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+         CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
       
-      CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
-      CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
-      
-      Configuring incomplete, errors occurred!
+         Configuring incomplete, errors occurred!
 
 - 7) En estos siguientes pasos vamos a estar modificando la sección de configuraciones y cambiamos variable:
 
@@ -165,14 +164,18 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48672340-a4ac0900-eb02-11e8-83f9-76f24f57ed26.png)
 
-     - b) Ahora, como se indica en el error, agregamos el NDK, que en mi caso se encuentra en la ruta "C:/android-ndk-r16b", para ello vamos al botón "Add Entry", colocamos como nombre de la variable "ANDROID_NDK", el tipo "Path" y el valor la ruta del ndk, como se ve en la imagen.
+     - b) Ahora, como se indica en el error, agregamos el NDK, que en mi caso se encuentra, en mi caso, en la ruta "C:/android-ndk-r16b", para ello vamos al botón "Add Entry", colocamos como nombre de la variable "ANDROID_NDK", el tipo "Path" y el valor la ruta del ndk, como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48676583-ab547380-eb36-11e8-9277-07325e65cc52.png)
 
-     - c) A continuación debemos de configurar el nombre de carpeta donde se encuentra la copia de los sistemas raíz de la plataforma que queremos compilar, en este caso el nombre es "arm-linux-androideabi-4.9" y se encuentra dentro de la ruta "C:\android-ndk-r16b\toolchains"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_TOOLCHAIN_NAME", el tipo "String" y el valor "arm-linux-androideabi-4.9", como se ve en la imagen.
+     - c) A continuación debemos de configurar el nombre de carpeta donde se encuentra la copia de los sistemas raíz de la plataforma que queremos compilar, en este caso el nombre es "arm-linux-androideabi-4.9" y se encuentra,en mi caso, dentro de la ruta "C:\android-ndk-r16b\toolchains"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_TOOLCHAIN_NAME", el tipo "String" y el valor "arm-linux-androideabi-4.9", como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48676733-eeafe180-eb38-11e8-8a16-2abad4732d58.png)
      
-     - d) Tambien debemos configurar la ruta del JDK que se encuentra dentro de la ruta "C:\Program Files\Java\jdk1.8.0_181"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "JAVA_HOME", el tipo "Path" y el valor "C:\Program Files\Java\jdk1.8.0_181", como se ve en la imagen.
+     - d) Tambien debemos configurar la ruta del JDK que se encuentra, en mi caso, dentro de la ruta "C:/Program Files/Java/jdk1.8.0_181"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "JAVA_HOME", el tipo "Path" y el valor "C:\Program Files\Java\jdk1.8.0_181", como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48677108-0178e500-eb3e-11e8-8b26-b34e0f561473.png)
+
+     - e) Tambien debemos configurar la ruta del ANT que se encuentra, en mi caso, dentro de la ruta "C:/apache-ant-1.10.5/bin/ant.bat"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANT_EXECUTABLE", el tipo "Filepath" y el valor mencionado inicialmente, como se ve en la imagen.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48677717-f5455580-eb46-11e8-8643-18011f728623.png)
