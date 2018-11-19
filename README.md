@@ -237,3 +237,10 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      ![image](https://user-images.githubusercontent.com/31372472/48680366-bf18cd80-eb68-11e8-81a3-08ddba7a2142.png)
      
      ![image](https://user-images.githubusercontent.com/31372472/48680397-0e5efe00-eb69-11e8-9122-0825331e581c.png)
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48682480-5cc6c980-eb76-11e8-9c3b-f17bc3eb6500.png)
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48682508-8bdd3b00-eb76-11e8-8b7e-4db2a88f1807.png)
+     
+- 9) Finalizada la construcción entramos:
+     
