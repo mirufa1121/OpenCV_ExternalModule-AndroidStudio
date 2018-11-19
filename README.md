@@ -104,7 +104,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      * msys-xz
      * msys-zlib
      
-     Se ve similar a esta imagen (esta imagen no muestra todos los check que se menciona en la lista de arriba debido a la gran cantidad, pero podrán ver todas las imagenes en este link: XXXXXXXX).
+     Se ve similar a esta imagen (esta imagen no muestra todos los check que se menciona en la lista de arriba debido a la gran cantidad, pero podrán ver todas las imagenes en este link: XXXXXXXXpendienteXXXXXXXX).
      
      ![image](https://user-images.githubusercontent.com/31372472/48667459-1b65e980-eaa4-11e8-8147-64d1f83c296e.png)
      
@@ -242,9 +242,10 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48682508-8bdd3b00-eb76-11e8-8b7e-4db2a88f1807.png)
      
-- 9) Finalizada la construcción entramos:
+- 9) Finalizada la construcción entramos a la siguiente ruta, esta ruta es donde se crearon las librerias y archivos .java:
 
      C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\modules\java_bindings_generator\gen\java\org\opencv
 
      ![image](https://user-images.githubusercontent.com/31372472/48684543-1c6c4900-eb80-11e8-9a79-532b15fdacbb.png)
      
+- 10) finalmente estas carpetas las copiamos a la carpeta de OpenCV de Android (Ojo, Android) y listo, a utilizarlo para sus desarrollos.
