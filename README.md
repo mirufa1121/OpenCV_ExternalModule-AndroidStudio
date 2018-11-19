@@ -243,4 +243,8 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      ![image](https://user-images.githubusercontent.com/31372472/48682508-8bdd3b00-eb76-11e8-8b7e-4db2a88f1807.png)
      
 - 9) Finalizada la construcción entramos:
+
+     C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\modules\java_bindings_generator\gen\java\org\opencv
+
+     ![image](https://user-images.githubusercontent.com/31372472/48684543-1c6c4900-eb80-11e8-9a79-532b15fdacbb.png)
      
