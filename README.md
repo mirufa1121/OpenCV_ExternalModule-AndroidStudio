@@ -216,4 +216,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48679122-3c891180-eb5a-11e8-9521-89a5f4b287bb.png)
      
+     - g) Ahora como antepenúltima configuración, antes del gran paso de de la configuración final debemos agregar 2 variables y quitar un check, las variables que debemos añadir son "ANDROID_PACKAGE" y "ANDROID_SET_OBSOLETE_VARIABLES", del tipo "Bool" y valor "True"; luego en la sección WITH quitamos el check a WITH_CUBLAS, como en la imagen siguiente:
      
+     ![image](https://user-images.githubusercontent.com/31372472/48679865-3e0b0780-eb63-11e8-9e8e-b413d59c2eda.png)
+
