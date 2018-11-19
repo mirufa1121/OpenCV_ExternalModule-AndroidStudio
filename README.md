@@ -220,3 +220,20 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48679865-3e0b0780-eb63-11e8-9e8e-b413d59c2eda.png)
 
+     - h) Y ahora la configuración más esperada, indicamos la ruta del OpenCV_Contrib, los módulos externos, para ello vamos al grupo de "OPEN_CV" y colocamos la ruta de los módulos, en mi caso la ruta es "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv_contrib-342-win\modules":
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48680199-dce53300-eb66-11e8-9ddc-7e773e668e56.png)
+
+     - i) A continuación apretamos "Configure" y luego de eso apretamos "Generate" y con eso se concluye la configuración.
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48680283-c9869780-eb67-11e8-8de1-66c07c9c09f9.png)
+
+- 8) Como uno de los últimos pasos levantamos un CMD y empezamos a realizar la construcción, primero, nos dirigimos dentro del CMD a la ruta , en mi caso, "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build", dentro ejecutamos el siguiente comando:
+
+     "C:\android-ndk-r16b\prebuilt\windows-x86_64\bin\make.exe -f Makefile"
+     
+     similar a la imagen y listo, comienza la mágia.
+
+     ![image](https://user-images.githubusercontent.com/31372472/48680366-bf18cd80-eb68-11e8-81a3-08ddba7a2142.png)
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48680397-0e5efe00-eb69-11e8-9122-0825331e581c.png)
