@@ -24,7 +24,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48667518-b8755200-eaa5-11e8-9e5f-e716128b9152.png)
 
-     Los archivos instalados de OpenCV para windows quedan asi en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk".
+     Los archivos instalados de OpenCV para windows quedan así en la ruta "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk".
      
      ![image](https://user-images.githubusercontent.com/31372472/48667544-5d902a80-eaa6-11e8-9733-e0204b1de47a.png)
      
@@ -32,11 +32,11 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48667548-8adcd880-eaa6-11e8-9e80-d6ea8e6e5813.png)
 
-- 2) Configurar Variables de Entorno, después de instalar todo lo que se menciono líneas arriba, se debe de configurar algunas variables de entorno. En mi caso no tenia configurado el ANT_HOME y el JAVA_HOME
+- 2) Configurar Variables de Entorno, después de instalar todo lo que se mencionó líneas arriba, se debe de configurar algunas variables de entorno. En mi caso no tenía configurado el ANT_HOME y el JAVA_HOME
 
      ![image](https://user-images.githubusercontent.com/31372472/48667204-3aae4800-ea9f-11e8-9ab7-b9019156f0af.png)
      
-     Tambien debes de configurar en el "path", el MINGW, Java Tools, SDK Tools, SDK Platform Tools, Java y Ant, luego dar Aceptar en todo.
+     También debes de configurar en el "path", el MINGW, Java Tools, SDK Tools, SDK Platform Tools, Java y Ant, luego dar Aceptar en todo.
      
      ![image](https://user-images.githubusercontent.com/31372472/48667235-c6c06f80-ea9f-11e8-99b8-9f4052c90aa3.png)
 
@@ -48,7 +48,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48667142-d6d74f80-ea9d-11e8-99e8-46874ce50331.png)
      
-- 4) Configurar MinGW, abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente (tener en cuenta que el MinGW tiene configuraciones predefinidas y posiblemente algunos ya esten marcados):
+- 4) Configurar MinGW, abrir el "MinGW Installetion Manager", y en la sección de dar check, darle check a lo siguiente (tener en cuenta que el MinGW tiene configuraciones predefinidas y posiblemente algunos ya estén marcados):
 
      * mingw32-base
      * mingw32-binutils
@@ -104,11 +104,11 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      * msys-xz
      * msys-zlib
      
-     Se ve similar a esta imagen (esta imagen no muestra todos los check que se menciona en la lista de arriba debido a la gran cantidad, pero podrán ver todas las imagenes en este link: XXXXXXXXpendienteXXXXXXXX).
+     Se ve similar a esta imagen (esta imagen no muestra todos los check que se menciona en la lista de arriba debido a la gran cantidad, pero podrán ver todas las imágenes en este link: XXXXXXXXpendienteXXXXXXXX).
      
      ![image](https://user-images.githubusercontent.com/31372472/48667459-1b65e980-eaa4-11e8-8147-64d1f83c296e.png)
      
-- 5) A partir de aquí empezamos a construir los archivos de OpenCV de Windows y OpenCV_Contrib para que luego sean utilizados por el OpenCV para Andorid, para ello abrimos el CMAKE, allí colocamos las rutas de la fuente y de la construcción, en micaso las rutas son:
+- 5) A partir de aquí empezamos a construir los archivos de OpenCV de Windows y OpenCV_Contrib para que luego sean utilizados por el OpenCV para Andorid, para ello abrimos el CMAKE, allí colocamos las rutas de la fuente y de la construcción, en mi caso las rutas son:
 
      Source: C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources
      Build: C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/build
@@ -117,11 +117,11 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48668451-e1a0dd00-eabb-11e8-8eb7-30f051a30750.png)
      
-- 6) Luego apretamos el botón "Configure", inmediatamente aparecera otra pantalla donde debemos especificar el "Generador" el cual debemos elegir "MinGW Makefiles", y despues seleccionamos "Specify toolchain file for cross-compiling" y apretamos "Next".
+- 6) Luego apretamos el botón "Configure", inmediatamente aparecerá otra pantalla donde debemos especificar el "Generador" el cual debemos elegir "MinGW Makefiles", y después seleccionamos "Specify toolchain file for cross-compiling" y apretamos "Next".
 
      ![image](https://user-images.githubusercontent.com/31372472/48668494-bd91cb80-eabc-11e8-89f3-8a93ea084d6c.png)
      
-     Seleccionamosel archivo que se encuentra dentro del mismo OpenCV para windows, en mi caso en la siguiente ruta:
+     Seleccionamos el archivo que se encuentra dentro del mismo OpenCV para windows, en mi caso en la siguiente ruta:
      
      C:/OpenCV-android-sdk/opencv-342-win-sdk/opencv-342-win-sdk/sources/platforms/android/android.toolchain.cmake
      
@@ -129,11 +129,12 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48668530-a1425e80-eabd-11e8-8194-4513d11de5f3.png)
      
-     Inmeditamete se generará un error que luego en los siguientes pasos se solucionará, solo darle "OK".
+     Inmediatamente se generará un error que luego en los siguientes pasos se solucionará, solo darle "OK".
      
      ![image](https://user-images.githubusercontent.com/31372472/48668552-1dd53d00-eabe-11e8-849f-9a640325cfb2.png)
      
      El error que se genera es el siguiente:
+
      
       CMake Error at platforms/android/android.toolchain.cmake:458 (message):
          Could not find neither Android NDK nor Android standalone toolchain.
@@ -168,15 +169,15 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48676583-ab547380-eb36-11e8-9277-07325e65cc52.png)
 
-     - c) A continuación debemos de configurar el nombre de carpeta donde se encuentra la copia de los sistemas raíz de la plataforma que queremos compilar, en este caso el nombre es "arm-linux-androideabi-4.9" y se encuentra,en mi caso, dentro de la ruta "C:\android-ndk-r16b\toolchains"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_TOOLCHAIN_NAME", el tipo "String" y el valor "arm-linux-androideabi-4.9", como se ve en la imagen.
+     - c) A continuación debemos de configurar el nombre de carpeta donde se encuentra la copia de los sistemas raíz de la plataforma que queremos compilar, en este caso el nombre es "arm-linux-androideabi-4.9" y se encuentra, en mi caso, dentro de la ruta "C:\android-ndk-r16b\toolchains"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANDROID_TOOLCHAIN_NAME", el tipo "String" y el valor "arm-linux-androideabi-4.9", como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48676733-eeafe180-eb38-11e8-8a16-2abad4732d58.png)
      
-     - d) Tambien debemos configurar la ruta del JDK que se encuentra, en mi caso, dentro de la ruta "C:/Program Files/Java/jdk1.8.0_181"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "JAVA_HOME", el tipo "Path" y el valor "C:\Program Files\Java\jdk1.8.0_181", como se ve en la imagen.
+     - d) También debemos configurar la ruta del JDK que se encuentra, en mi caso, dentro de la ruta "C:/Program Files/Java/jdk1.8.0_181"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "JAVA_HOME", el tipo "Path" y el valor "C:\Program Files\Java\jdk1.8.0_181", como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48677108-0178e500-eb3e-11e8-8b26-b34e0f561473.png)
 
-     - e) Tambien debemos configurar la ruta del ANT que se encuentra, en mi caso, dentro de la ruta "C:/apache-ant-1.10.5/bin/ant.bat"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANT_EXECUTABLE", el tipo "Filepath" y el valor mencionado inicialmente, como se ve en la imagen.
+     - e) También debemos configurar la ruta del ANT que se encuentra, en mi caso, dentro de la ruta "C:/apache-ant-1.10.5/bin/ant.bat"; similar al paso b, ingresamos a "Add Entry", colocamos como nombre de la variable "ANT_EXECUTABLE", el tipo "Filepath" y el valor mencionado inicialmente, como se ve en la imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48677717-f5455580-eb46-11e8-8643-18011f728623.png)
 
@@ -184,7 +185,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48678794-eade8800-eb55-11e8-8b6e-aedd622482d3.png)
      
-     Luego debemos configurar las variables ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "andorid-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api adminitos por la NDK. Ver las siguientes imagenes:
+     Luego debemos configurar las variables ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "andorid-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api admitidos por la NDK. Ver las siguientes imágenes:
      
      ![image](https://user-images.githubusercontent.com/31372472/48678894-9805d000-eb57-11e8-883a-7983dea777f0.png)
      
@@ -212,11 +213,11 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
          cmake/android/OpenCVDetectAndroidSDK.cmake:204 (include)
          CMakeLists.txt:645 (include)
 
-     Para solucionar ese error simplemente vamos a las variables del CMAKE, nos dirigimos a la variable BUILD_ANDROID_PROJECTS y le quitamos el check, como se ve en la imagen y despues damos click en "Configurar" y finalmemte compilara todo sin problemas, y en la última línea de los detalle saldrá "Configuring done", ver imagen.
+     Para solucionar ese error simplemente vamos a las variables del CMAKE, nos dirigimos a la variable BUILD_ANDROID_PROJECTS y le quitamos el check, como se ve en la imagen y después damos click en "Configurar" y finalmente compilara todo sin problemas, y en la última línea de los detalle saldrá "Configuring done", ver imagen.
      
      ![image](https://user-images.githubusercontent.com/31372472/48679122-3c891180-eb5a-11e8-9521-89a5f4b287bb.png)
      
-     - g) Ahora como antepenúltima configuración, antes del gran paso de de la configuración final debemos agregar 2 variables y quitar un check, las variables que debemos añadir son "ANDROID_PACKAGE" y "ANDROID_SET_OBSOLETE_VARIABLES", del tipo "Bool" y valor "True"; luego en la sección WITH quitamos el check a WITH_CUBLAS, como en la imagen siguiente:
+     - g) Ahora como antepenúltima configuración, antes del gran paso de la configuración final debemos agregar 2 variables y quitar un check, las variables que debemos añadir son "ANDROID_PACKAGE" y "ANDROID_SET_OBSOLETE_VARIABLES", del tipo "Bool" y valor "True"; luego en la sección WITH quitamos el check a WITH_CUBLAS, como en la imagen siguiente:
      
      ![image](https://user-images.githubusercontent.com/31372472/48679865-3e0b0780-eb63-11e8-9e8e-b413d59c2eda.png)
 
@@ -232,7 +233,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      "C:\android-ndk-r16b\prebuilt\windows-x86_64\bin\make.exe -f Makefile"
      
-     similar a la imagen y listo, comienza la mágia.
+     similar a la imagen y listo, comienza la magia.
 
      ![image](https://user-images.githubusercontent.com/31372472/48680366-bf18cd80-eb68-11e8-81a3-08ddba7a2142.png)
      
@@ -242,7 +243,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48682508-8bdd3b00-eb76-11e8-8b7e-4db2a88f1807.png)
      
-- 9) Finalizada la construcción entramos a la siguiente ruta, esta ruta es donde se crearon las librerias y archivos .java:
+- 9) Finalizada la construcción entramos a la siguiente ruta, esta ruta es donde se crearon las librerías y archivos .java:
 
      C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\modules\java_bindings_generator\gen\java\org\opencv
 
