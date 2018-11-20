@@ -249,6 +249,6 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48684543-1c6c4900-eb80-11e8-9a79-532b15fdacbb.png)
      
-- 10) Las carpetas seleccionadas (que contiene .java) las copiamos a la carpeta de OpenCV de Android (Ojo, Android) y listo, en mi caso la ruta destino es "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\java\src\org\opencv", como se ve en la imagen.
+     y luego estas carpetas seleccionadas (las que contiene .java) las copiamos a la carpeta de OpenCV de Android (Ojo, Android), en mi caso la ruta destino es "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\java\src\org\opencv", como se ve en la imagen.
 
      ![image](https://user-images.githubusercontent.com/31372472/48747313-ee027280-ec40-11e8-83a0-7681edc8949c.png)
