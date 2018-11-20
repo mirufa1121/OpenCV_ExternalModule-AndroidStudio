@@ -243,7 +243,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48682508-8bdd3b00-eb76-11e8-8b7e-4db2a88f1807.png)
      
-- 9) Finalizada la construcción entramos a la siguiente ruta, esta ruta es donde se crearon las librerías y archivos .java:
+- 9) Finalizada la construcción entramos a la siguiente ruta, esta ruta es donde se crearon los archivos ".java":
 
      C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\modules\java_bindings_generator\gen\java\org\opencv
 
@@ -252,3 +252,13 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      y luego estas carpetas seleccionadas (las que contiene .java) las copiamos a la carpeta de OpenCV de Android (Ojo, Android), en mi caso la ruta destino es "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\java\src\org\opencv", como se ve en la imagen.
 
      ![image](https://user-images.githubusercontent.com/31372472/48747313-ee027280-ec40-11e8-83a0-7681edc8949c.png)
+     
+- 10) Luego copiamos los archivos ".a" de la carpeta "armeabi-v7a" y las copiamos a su correspondiente en OpenCV de Android, en mi caso la ruta origen es "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\lib\armeabi-v7a" y la carpeta destino es "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\native\staticlibs\armeabi-v7a" (se que armeabi-v7a no es la única carpeta, existen tambien arm64-v8a, armeabi, mips, mips64, x86 y x86_64, les explicare al final como anexo como obtenemos los archivos .a para ellos).
+
+     Copiar de este origen:
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48748056-84d02e80-ec43-11e8-8fde-818b46165881.png)
+     
+     A este destino:
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48748124-c365e900-ec43-11e8-9f91-d2b65bbb73c8.png)
