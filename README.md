@@ -185,7 +185,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48678794-eade8800-eb55-11e8-8b6e-aedd622482d3.png)
      
-     Luego debemos configurar las variables ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "andorid-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api admitidos por la NDK. Ver las siguientes imágenes:
+     Luego debemos configurar las variables ANDROID_SDK_TARGET y ANDROID_NATIVE_API_LEVEL, la primera tendrá el valor de "android-21" y la segunda el valor de "21", ahora estos valores dependen de la versión de android con la que van a trabajar, en mi caso yo estoy trabajando con el 5.0, por lo tanto me corresponde la 21, ahora si ustedes desean trabajar con otra pueden consultar en este link https://developer.android.com/ndk/guides/stable_apis?hl=es-419 y consultar en la tabla de niveles de api admitidos por la NDK. Ver las siguientes imágenes:
      
      ![image](https://user-images.githubusercontent.com/31372472/48678894-9805d000-eb57-11e8-883a-7983dea777f0.png)
      
