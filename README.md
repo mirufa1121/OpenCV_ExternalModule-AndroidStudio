@@ -257,7 +257,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      Copiar de esta carpeta origen:
      
-     ![image](https://user-images.githubusercontent.com/31372472/48748124-c365e900-ec43-11e8-9f91-d2b65bbb73c8.png)
+     ![image](https://user-images.githubusercontent.com/31372472/48991144-a9268200-f0ff-11e8-974e-2c6a88a5f0f2.png)
      
      A este destino, en este caso se copia el archivo ".so" a:
      
