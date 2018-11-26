@@ -1,4 +1,4 @@
-# Como configurar OpenCV Exta Modules o Contribution Modules en Android Studio para Windows de 64 bits
+# Como configurar OpenCV Extra Modules o Contribution Modules en Android Studio para Windows de 64 bits
 
 Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio 3.1.4 (64 Bits) para Windows 7, 10 o más de 64 bits.
 
