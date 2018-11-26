@@ -275,3 +275,10 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48991847-e3455300-f102-11e8-9ae6-a47c5fd00c8f.png)
      
+     Y listo, configuración completa!!!.
+     
+Anexo:
+
+     Para configurar las otras carpetas ABI solo se debe de reemplazar el punto 7 C por lo siguiente, dependiendo del tipo de configuración:
+
+     ![image](https://user-images.githubusercontent.com/31372472/48992327-30c2bf80-f105-11e8-8c30-79a41e71db8c.png)
