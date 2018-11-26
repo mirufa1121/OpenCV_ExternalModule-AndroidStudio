@@ -253,12 +253,19 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
 
      ![image](https://user-images.githubusercontent.com/31372472/48747313-ee027280-ec40-11e8-83a0-7681edc8949c.png)
      
-- 10) Luego copiamos los archivos ".a" de la carpeta "armeabi-v7a" y las copiamos a su correspondiente en OpenCV de Android, en mi caso la ruta origen es "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\lib\armeabi-v7a" y la carpeta destino es "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\native\staticlibs\armeabi-v7a" (se que armeabi-v7a no es la única carpeta, existen tambien arm64-v8a, armeabi, mips, mips64, x86 y x86_64, les explicare al final como anexo como obtenemos los archivos .a para ellos).
+- 10) Luego copiamos los archivos ".so" y ".a" de la carpeta "armeabi-v7a" en sus correspondienes dentro de OpenCV de Android, en mi caso la ruta origen es "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\lib\armeabi-v7a" y "C:\OpenCV-android-sdk\opencv-342-win-sdk\opencv-342-win-sdk\build\3rdparty\lib\armeabi-v7a" y las carpetas destino son en mi caso "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\native\libs\armeabi-v7a", "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\native\staticlibs\armeabi-v7a" y "C:\OpenCV-android-sdk\opencv-342-android-sdk\sdk\native\3rdparty\libs\armeabi-v7a" (se que la carpeta armeabi-v7a no es la única carpeta ABI de configuración, existen tambien arm64-v8a, armeabi, mips, mips64, x86 y x86_64, les explicare al final como anexo como obtenemos los archivos .a y .so para ellos).
 
-     Copiar de este origen:
-     
-     ![image](https://user-images.githubusercontent.com/31372472/48748056-84d02e80-ec43-11e8-8fde-818b46165881.png)
-     
-     A este destino:
+     Copiar de esta carpeta origen:
      
      ![image](https://user-images.githubusercontent.com/31372472/48748124-c365e900-ec43-11e8-9f91-d2b65bbb73c8.png)
+     
+     A este destino, en este caso se copia el archivo ".so" a:
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48991212-03bfde00-f100-11e8-8f70-21eb6c9a0051.png)
+     
+     Y las ".sa" a:
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48991272-4386c580-f100-11e8-8dd0-5fcf9fd3da15.png)
+     
+     ![image](https://user-images.githubusercontent.com/31372472/48991338-8ba5e800-f100-11e8-9174-a02aad94a7a2.png)
+     
