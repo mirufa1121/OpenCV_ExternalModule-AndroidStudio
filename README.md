@@ -259,11 +259,11 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48991144-a9268200-f0ff-11e8-974e-2c6a88a5f0f2.png)
      
-     A este destino, en este caso se copia el archivo ".so" a:
+     A este destino en OpenCV de Android, en este caso se copia el archivo ".so" a:
      
      ![image](https://user-images.githubusercontent.com/31372472/48991212-03bfde00-f100-11e8-8f70-21eb6c9a0051.png)
      
-     Y las ".sa" a:
+     Y las ".sa" en la siguiente carpeta de OpenCV de Android:
      
      ![image](https://user-images.githubusercontent.com/31372472/48991272-4386c580-f100-11e8-8dd0-5fcf9fd3da15.png)
      
@@ -271,7 +271,7 @@ Configuración de OpenCV 3.4.2 (64 bits) y OpenCV_Cotrib 3.4.2 en Android Studio
      
      ![image](https://user-images.githubusercontent.com/31372472/48991338-8ba5e800-f100-11e8-9174-a02aad94a7a2.png)
      
-     Al siguiente destino:
+     Al siguiente destino en OpenCV de Android:
      
      ![image](https://user-images.githubusercontent.com/31372472/48991847-e3455300-f102-11e8-9ae6-a47c5fd00c8f.png)
      
